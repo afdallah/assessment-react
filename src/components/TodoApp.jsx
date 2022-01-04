@@ -95,7 +95,7 @@ export default function TodoApp () {
 
       {/* TodoList */}
       <ul className='todo-list'>
-        {todos.map((todo, index) => {
+        {todos.length ? todos.map((todo, index) => {
           return (
             <li key={index} className='todo-item'>
               <input
@@ -111,7 +111,7 @@ export default function TodoApp () {
               </button>
             </li>
           )
-        })}
+        }) : 'Ciyee nganggur nih hari ini 🥳'}
       </ul>
     </div>
   )
